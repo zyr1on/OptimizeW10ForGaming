@@ -3,10 +3,14 @@
 if %errorLevel% equ 0 (
     sc config sysmain start=disabled > nul && echo [+] Sysmain disabled
     sc config iphlpsvc start=disabled > nul && echo [+] iphlpsvc disabled
+    sc config WalletService start=disabled > nul && echo [+] WalletService disabled
+    sc config SEMgrSvc start=disabled > nul && echo [+] SEMgrSvc disabled
     sc config LanmanWorkstation start=disabled > nul && echo [+] LanmanWorkstation disabled
     sc config DPS start=disabled > nul  && echo [+] DPS disabled
     sc config WSearch start=disabled > nul  && echo [+] WSearch disabled
+    sc config Themes start=disabled > nul  && echo [+] Themes disabled
     sc config Spooler start=disabled > nul  && echo [+] Spooler disabled
+    sc config WbioSrvc start=disabled > nul  && echo [+] WbioSrvc disabled
     sc config DiagTrack start=disabled > nul  && echo [+] DiagTrack disabled
     sc config TrkWks start=disabled > nul  && echo [+] TrkWks disabled
     sc config FDResPub start=disabled > nul  && echo [+] FDResPub disabled
