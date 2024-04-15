@@ -16,17 +16,14 @@ if %errorLevel% equ 0 (
     sc config lmhosts start=disabled > nul  && echo [+] lmhosts disabled
     sc config lfsvc start=disabled > nul  && echo [+] lfsvc disabled
     sc config MapsBroker start=disabled > nul  && echo [+] MapsBroker disabled
-    echo TRIM enabling...
-    fsutil behavior set DisableDeleteNotify 0
-    echo HPET disabling...
-    bcdedit /deletevalue useplatformclock > nul
-    echo disabledynamictick enabling...
-    bcdedit /set disabledynamictick yes > nul
-    echo Dark Theme enabling...
+    fsutil behavior set DisableDeleteNotify 0 && echo [+] TRIM enabled!
+    bcdedit /deletevalue useplatformclock > nul && echo [+] HPET disabled.
+    bcdedit /set disabledynamictick yes > nul && echo [+] disabledynamictick set to yes!
+    powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 > nul && echo [+] Added new performance settings to battery!.
+    echo [+] Dark Theme enabling...
     reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v SystemUsesLightTheme /t REG_DWORD /d 0 /f > nul
     reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v EnableTransparency /t REG_DWORD /d 0 /f > nul
     reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v AppsUseLightTheme /t REG_DWORD /d 0 /f > nul
-    
     pause
 ) else (
     echo Run program as administrator!.
