@@ -16,7 +16,7 @@ if %errorLevel% equ 0 (
     sc config lmhosts start=disabled > nul  && echo [+] lmhosts disabled
     sc config lfsvc start=disabled > nul  && echo [+] lfsvc disabled
     sc config MapsBroker start=disabled > nul  && echo [+] MapsBroker disabled
-    fsutil behavior set DisableDeleteNotify 0 && echo [+] TRIM enabled!
+    fsutil behavior set DisableDeleteNotify 0 > nul && echo [+] TRIM enabled!
     bcdedit /deletevalue useplatformclock > nul && echo [+] HPET disabled.
     bcdedit /set disabledynamictick yes > nul && echo [+] disabledynamictick set to yes!
     powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 > nul && echo [+] New power plan added to battery!.
