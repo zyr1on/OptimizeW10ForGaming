@@ -1,7 +1,6 @@
 @echo off
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if %errorLevel% equ 0 (
-    rem Administrator things...
     sc config sysmain start=disabled > nul && echo [+] Sysmain disabled
     sc config iphlpsvc start=disabled > nul && echo [+] iphlpsvc disabled
     sc config LanmanWorkstation start=disabled > nul && echo [+] LanmanWorkstation disabled
