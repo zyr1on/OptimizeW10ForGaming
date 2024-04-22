@@ -6,6 +6,7 @@ if %errorLevel% equ 0 (
     sc config WalletService start=disabled > nul && echo [+] WalletService disabled
     sc config SEMgrSvc start=disabled > nul && echo [+] SEMgrSvc disabled
     sc config LanmanWorkstation start=disabled > nul && echo [+] LanmanWorkstation disabled
+    sc config AJRouter start=disabled > nul && echo [+] AJRouter disabled
     sc config DPS start=disabled > nul  && echo [+] DPS disabled
     sc config WSearch start=disabled > nul  && echo [+] WSearch disabled
     sc config Themes start=disabled > nul  && echo [+] Themes disabled
