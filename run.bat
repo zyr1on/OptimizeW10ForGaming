@@ -4,6 +4,7 @@ if %errorLevel% equ 0 (
     sc config sysmain start=disabled > nul && echo [+] Sysmain disabled
     sc config iphlpsvc start=disabled > nul && echo [+] iphlpsvc disabled
     sc config WalletService start=disabled > nul && echo [+] WalletService disabled
+    sc config DusmSvc start=disabled > nul && echo [+] DusmSvc disabled
     sc config SEMgrSvc start=disabled > nul && echo [+] SEMgrSvc disabled
     sc config LanmanWorkstation start=disabled > nul && echo [+] LanmanWorkstation disabled
     sc config AJRouter start=disabled > nul && echo [+] AJRouter disabled
