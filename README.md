@@ -18,11 +18,11 @@
 pointer precission!
 
 <h3>What happened!</h3>
-<ol type="1">
+<ul>
   <li>TRIM ENABLED</li>
   <li>UNNNECESARY SERVICES DISABLED</li>
   <li>DARK MODE ENABLED</li>
   <li>POWER PLAN ADDED</li>
   <li>HPET DISABLED</li>
-</ol>
+</ul>
 
