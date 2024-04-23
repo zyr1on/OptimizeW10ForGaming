@@ -2,11 +2,6 @@
 
 <h2>DISCLAIMER:<br>This program optimizates windows just for only gaming!<br>Services that are unnecessary for the game will be disabled.</h2>
 
-<ul>
-  <li>test</li>
-  <li>test</li>
-</ul>
-
 <li>https://www.technopat.net/sosyal/konu/windows-10-gelismis-optimizasyon-ayarlamalari-fps-arttirma-10-15.812214/</li>
 <li>https://steamcommunity.com/sharedfiles/filedetails/?l=danish&id=3092452302</li>
 
@@ -21,3 +16,12 @@
 -Win32PrioritySeparation
 
 pointer precission!
+
+<ol type="1">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+</ol>
+
