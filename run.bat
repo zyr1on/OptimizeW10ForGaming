@@ -1,4 +1,5 @@
 @echo off
+echo This program optimization windows just for only gaming!
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if %errorLevel% equ 0 (
     sc config sysmain start=disabled > nul && echo [+] Sysmain disabled
@@ -6,6 +7,7 @@ if %errorLevel% equ 0 (
     sc config WalletService start=disabled > nul && echo [+] WalletService disabled
     sc config DusmSvc start=disabled > nul && echo [+] DusmSvc disabled
     sc config SEMgrSvc start=disabled > nul && echo [+] SEMgrSvc disabled
+    sc config LanmanServer start=disabled > nul && echo [+] LanmanServer disabled
     sc config LanmanWorkstation start=disabled > nul && echo [+] LanmanWorkstation disabled
     sc config AJRouter start=disabled > nul && echo [+] AJRouter disabled
     sc config DPS start=disabled > nul  && echo [+] DPS disabled
