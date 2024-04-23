@@ -25,6 +25,7 @@ if %errorLevel% equ 0 (
     sc config MapsBroker start=disabled > nul  && echo [+] MapsBroker disabled
     fsutil behavior set DisableDeleteNotify 0 > nul && echo [+] TRIM enabled!
     bcdedit /deletevalue useplatformclock > nul && echo [+] HPET disabled.
+    bcdedit /set useplatformtick false > nul
     bcdedit /set disabledynamictick yes > nul && echo [+] disabledynamictick set to yes!
     powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 > nul && echo [+] New power plan added to battery!.
     reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v SystemUsesLightTheme /t REG_DWORD /d 0 /f > nul
