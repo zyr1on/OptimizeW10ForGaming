@@ -19,7 +19,7 @@ pointer precission!
 
 <ul>
   <li>TRIM ENABLED</li>
-  <li>UNNNECESARY SERVICES DISABLED</li>
+  <li>UNNECESSARY SERVICES DISABLED</li>
   <li>DARK MODE ENABLED</li>
   <li>POWER PLAN ADDED</li>
   <li>HPET DISABLED</li>
