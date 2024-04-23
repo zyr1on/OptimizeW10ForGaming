@@ -1,5 +1,5 @@
 @echo off
-echo This program optimization windows just for only gaming!
+echo This program optimizates windows just for only gaming!
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if %errorLevel% equ 0 (
     sc config sysmain start=disabled > nul && echo [+] Sysmain disabled
