@@ -1,5 +1,5 @@
 # optimization
-<h2>This program optimization windows 10 just for only gaming!</h2>
+<h2>This program optimizates windows just for only gaming!</h2>
 
 
 <li>https://www.technopat.net/sosyal/konu/windows-10-gelismis-optimizasyon-ayarlamalari-fps-arttirma-10-15.812214/</li>
