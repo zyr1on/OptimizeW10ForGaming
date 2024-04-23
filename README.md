@@ -1,6 +1,6 @@
 # optimization
 
-<h2>IMPORTANT:This program optimizates windows just for only gaming!<br>Services that are unnecessary for the game will be disabled.</h2>
+<h2>DISCLAIMER:<br>This program optimizates windows just for only gaming!<br>Services that are unnecessary for the game will be disabled.</h2>
 <li>https://www.technopat.net/sosyal/konu/windows-10-gelismis-optimizasyon-ayarlamalari-fps-arttirma-10-15.812214/</li>
 
 <li>https://www.youtube.com/watch?v=sbXzM60ad8I&list=LL&index=2&t=3162s</li>
