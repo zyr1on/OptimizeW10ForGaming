@@ -17,11 +17,12 @@
 
 pointer precission!
 
+<h3>What happened!</h3>
 <ol type="1">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
+  <li>TRIM ENABLED</li>
+  <li>UNNNECESARY SERVICES DISABLED</li>
+  <li>DARK MODE ENABLED</li>
+  <li>POWER PLAN ADDED</li>
+  <li>HPET DISABLED</li>
 </ol>
 
