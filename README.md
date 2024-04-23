@@ -17,7 +17,6 @@
 
 pointer precission!
 
-<h3>What happened!</h3>
 <ul>
   <li>TRIM ENABLED</li>
   <li>UNNNECESARY SERVICES DISABLED</li>
