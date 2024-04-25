@@ -5,13 +5,17 @@ if %errorLevel% equ 0 (
     sc config sysmain start=disabled > nul && echo [+] Sysmain disabled
     sc config iphlpsvc start=disabled > nul && echo [+] iphlpsvc disabled
     sc config WalletService start=disabled > nul && echo [+] WalletService disabled
+    sc config dmwappushservice start=disabled > nul && echo [+] dmwappushservice disabled
+    sc config TabletInputService start=disabled > nul && echo [+] TabletInputService disabled
     sc config DusmSvc start=disabled > nul && echo [+] DusmSvc disabled
     sc config SEMgrSvc start=disabled > nul && echo [+] SEMgrSvc disabled
     sc config LanmanServer start=disabled > nul && echo [+] LanmanServer disabled
     sc config LanmanWorkstation start=disabled > nul && echo [+] LanmanWorkstation disabled
     sc config AJRouter start=disabled > nul && echo [+] AJRouter disabled
     sc config DPS start=disabled > nul  && echo [+] DPS disabled
+    sc config lfsvc start=disabled > nul  && echo [+] lfsvc disabled
     sc config WSearch start=disabled > nul  && echo [+] WSearch disabled
+    sc config PolicyAgent start=disabled > nul  && echo [+] PolicyAgent disabled
     sc config Themes start=disabled > nul  && echo [+] Themes disabled
     sc config Spooler start=disabled > nul  && echo [+] Spooler disabled
     sc config WbioSrvc start=disabled > nul  && echo [+] WbioSrvc disabled
@@ -21,7 +25,6 @@ if %errorLevel% equ 0 (
     sc config PcaSvc start=disabled > nul  && echo [+] PcaSvc disabled
     sc config RmSvc start=disabled > nul  && echo [+] RmSvc disabled
     sc config lmhosts start=disabled > nul  && echo [+] lmhosts disabled
-    sc config lfsvc start=disabled > nul  && echo [+] lfsvc disabled
     sc config MapsBroker start=disabled > nul  && echo [+] MapsBroker disabled
     fsutil behavior set DisableDeleteNotify 0 > nul && echo [+] TRIM enabled!
     bcdedit /deletevalue useplatformclock > nul && echo [+] HPET disabled. (look for device manager as well!)
