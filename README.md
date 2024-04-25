@@ -20,8 +20,10 @@ pointer precission!
 <ul>
   <li>TRIM ENABLED</li>
   <li>UNNECESSARY SERVICES DISABLED</li>
-  <li>DARK MODE ENABLED</li>
+  <li>DARK MODE ENABLE SUPPORT</li>
   <li>POWER PLAN ADDED</li>
   <li>HPET DISABLED</li>
 </ul>
+
+<code>Desk.cpl</code>
 
