@@ -27,11 +27,19 @@ if %errorLevel% equ 0 (
     bcdedit /deletevalue useplatformclock > nul && echo [+] HPET disabled. (look for device manager as well!)
     bcdedit /set useplatformtick false > nul
     bcdedit /set disabledynamictick yes > nul && echo [+] disabledynamictick set to yes!
-    powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 > nul && echo [+] New power plan added to battery!.
-    reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v SystemUsesLightTheme /t REG_DWORD /d 0 /f > nul
-    reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v EnableTransparency /t REG_DWORD /d 0 /f > nul
-    reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v AppsUseLightTheme /t REG_DWORD /d 0 /f > nul
-    echo [+] Dark Theme enabled!
+    powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 > nul && echo [+] New power plan added!.
+    set /p ans="[?] Enable dark mode (just type 'y' for yes): "
+    if /i "%ans%"=="y" (
+        reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v SystemUsesLightTheme /t REG_DWORD /d 0 /f > nul
+        reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v EnableTransparency /t REG_DWORD /d 0 /f > nul
+        reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v AppsUseLightTheme /t REG_DWORD /d 0 /f > nul
+        echo [+] dark mode enabled
+    )
+    set /p ans="[?] Are you want to restart pc (just type 'y' for yes): "
+    if /i "%ans%"=="y" (
+        echo [+] Restart scheduled after 5 secs
+        shutdown /s /t 5
+    )
     pause
 ) else (
     echo Run program as administrator!.
