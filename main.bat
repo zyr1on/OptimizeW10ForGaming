@@ -6,6 +6,7 @@ if %errorLevel% equ 0 (
     sc config iphlpsvc start=disabled > nul && echo [+] iphlpsvc disabled
     sc config WalletService start=disabled > nul && echo [+] WalletService disabled
     sc config dmwappushservice start=disabled > nul && echo [+] dmwappushservice disabled
+    :: TabletInputService touch keyboard and handwriting
     sc config TabletInputService start=disabled > nul && echo [+] TabletInputService disabled
     sc config DusmSvc start=disabled > nul && echo [+] DusmSvc disabled
     sc config SEMgrSvc start=disabled > nul && echo [+] SEMgrSvc disabled
@@ -23,7 +24,8 @@ if %errorLevel% equ 0 (
     sc config TrkWks start=disabled > nul  && echo [+] TrkWks disabled
     sc config FDResPub start=disabled > nul  && echo [+] FDResPub disabled
     sc config PcaSvc start=disabled > nul  && echo [+] PcaSvc disabled
-    sc config RmSvc start=disabled > nul  && echo [+] RmSvc disabled
+    ::RmSvc radio service    
+    sc config RmSvc start=disabled > nul  && echo [+] RmSvc disabled 
     sc config lmhosts start=disabled > nul  && echo [+] lmhosts disabled
     sc config MapsBroker start=disabled > nul  && echo [+] MapsBroker disabled
     fsutil behavior set DisableDeleteNotify 0 > nul && echo [+] TRIM enabled!
