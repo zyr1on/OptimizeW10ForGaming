@@ -12,7 +12,7 @@
 <li>https://www.youtube.com/watch?v=r4tMBS3Wy8A</li>
 <li>https://www.reddit.com/r/RingOfElysium/comments/aiwm2r/dramatically_increased_fps_with_this_guide/</li>
 <li>https://www.youtube.com/watch?v=n5Fm8wFh5DA</li>
-
+<li>https://www.technopat.net/sosyal/konu/windows-10-gelismis-hizlandirma-ve-hafifletme.1096589/</li>
 -Win32PrioritySeparation
 
 pointer precission!
