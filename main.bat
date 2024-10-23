@@ -7,7 +7,7 @@ if %errorLevel% equ 0 (
     sc config WalletService start=disabled > nul && echo [+] WalletService disabled
     sc config dmwappushservice start=disabled > nul && echo [+] dmwappushservice disabled
     :: TabletInputService touch keyboard and handwriting
-    sc config TabletInputService start=disabled > nul && echo [+] TabletInputService disabled
+    :: sc config TabletInputService start=disabled > nul && echo [+] TabletInputService disabled
     sc config DusmSvc start=disabled > nul && echo [+] DusmSvc disabled
     sc config SEMgrSvc start=disabled > nul && echo [+] SEMgrSvc disabled
     sc config LanmanServer start=disabled > nul && echo [+] LanmanServer disabled
